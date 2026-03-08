@@ -16,7 +16,7 @@ class TransactionType(str, enum.Enum):
     withdraw = "withdraw"
 
 class Transaction(Base):
-    __tablename__ = "transactions"
+    __tablename__ = "transactions"gi
 
     id           = Column(Integer, primary_key=True, index=True)
     reference    = Column(String(30), unique=True, index=True, nullable=False)
